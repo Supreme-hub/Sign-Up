@@ -1,0 +1,27 @@
+body {
+    display: flex;
+}
+
+.picone {
+    height: 98vh;
+}
+.picz {
+    display: flex;
+    position: absolute;
+    top:20%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.404);
+    width: 100%;
+}
+.logo {
+    height: 2em;
+}
+
+.picz > h2 {
+    font-size: 4em;
+}
+
+.pic {
+    position: relative;
+}
