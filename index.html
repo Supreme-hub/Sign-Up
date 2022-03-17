@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">   
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,24 +17,35 @@
         <h2><img src="images/102.png" alt="Logo" class="logo">ODIN</h2></div>
     </section>
     <section class="main">
+        <div>
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
         <span>Sign up now to get started</span>
 
         <h4>You know you want to.</h4>
+    </div>
         <div class="form">
             <h3>Let's do this!</h3>
 
-            <form action="get">
-                <input type="text" name="firstname" id="firstname">
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" name="lastname" id="lastname">
-                <input type="email" name="email" id="email">
-                <input type="tel" name="tel" id="tel">
-                <input type="password" name="password" id="password">
-                <input type="password" name="con-password" id="con-password">
+            <form>
+                <table>
+                    <tr>
+                        <td>First Name<input type="text" required></td>
+                        <td>Last Name<input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email<input type="email" required></td>
+                        <td>Phone Number<input type="tel" required></td>
+                    </tr>
+                    <tr>
+                        <td id="pass">Password<input type="password" required></td>
+                        <td id="conpass"> Confirm Password<input type="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Create Account</button></td>
+                    </tr>
+                </table>
             </form>
         </div>
-        <button type="submit">Create Account</button>
         <p>Already have a Account? <a href="#">Log in</a></p>
     </section>
 </body>
